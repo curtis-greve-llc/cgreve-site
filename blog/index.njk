@@ -1,0 +1,147 @@
+---
+layout: false
+permalink: /blog/index.html
+title: Insights — Reverse Logistics & Liquidation
+meta_description: No-fluff takes on liquidation, reverse logistics, and secondary market operations from Curtis Greve — 40 years in the industry.
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Insights | Curtis Greve — Reverse Logistics &amp; Liquidation</title>
+  <meta name="description" content="No-fluff takes on liquidation, reverse logistics, and secondary market operations from Curtis Greve — 40 years in the industry." />
+  <link rel="canonical" href="https://www.cgreve.com/blog/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.cgreve.com/blog/" />
+  <meta property="og:title" content="Insights | Curtis Greve" />
+  <meta property="og:description" content="No-fluff takes on liquidation, reverse logistics, and secondary market operations." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --black: #111111; --gray-900: #1a1a1a; --gray-700: #3a3a3a;
+      --gray-600: #555555; --gray-400: #999999; --gray-200: #e8e8e6;
+      --gray-100: #f5f5f3; --white: #ffffff;
+      --accent: #1a56a0; --accent-mid: #2563eb; --accent-light: #eff6ff;
+      --gold: #c9952a; --gold-light: #fdf8ee; --radius: 6px; --max: 1100px; --t: 0.2s ease;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; font-size: 16px; line-height: 1.7; color: var(--black); background: var(--white); -webkit-font-smoothing: antialiased; }
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(255,255,255,0.93); backdrop-filter: blur(12px); border-bottom: 1px solid var(--gray-200); height: 124px; display: flex; align-items: center; }
+    .nav-inner { max-width: var(--max); margin: 0 auto; padding: 0 28px; width: 100%; display: flex; align-items: center; justify-content: space-between; }
+    .nav-logo { display: flex; flex-direction: column; gap: 1px; text-decoration: none; }
+    .nav-logo-img { height: 90px; width: auto; display: block; max-width: 420px; }
+    .nav-logo-text-fallback { display: flex; flex-direction: column; gap: 1px; }
+    .nav-logo-name { font-size: 15px; font-weight: 600; letter-spacing: -0.02em; color: var(--black); line-height: 1.1; }
+    .nav-logo-tag { font-size: 10px; font-weight: 400; letter-spacing: 0.04em; color: var(--accent); line-height: 1; }
+    .nav-links { display: flex; gap: 28px; list-style: none; }
+    .nav-links a { font-size: 17px; color: var(--gray-600); text-decoration: none; font-weight: 700; transition: color var(--t); }
+    .nav-links a:hover { color: var(--black); }
+    .nav-cta { color: var(--accent) !important; font-weight: 500 !important; }
+    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 4px; }
+    .hamburger span { display: block; width: 22px; height: 2px; background: var(--black); border-radius: 2px; }
+
+    .blog-header { padding: 160px 28px 56px; max-width: var(--max); margin: 0 auto; border-bottom: 1px solid var(--gray-200); }
+    .section-label { font-size: 11px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gray-400); margin-bottom: 12px; }
+    .section-title { font-family: 'Lora', serif; font-size: clamp(28px, 4vw, 42px); font-weight: 600; line-height: 1.15; letter-spacing: -0.02em; color: var(--black); margin-bottom: 16px; }
+    .section-body { font-size: 17px; color: var(--gray-600); max-width: 620px; line-height: 1.75; }
+
+    .post-list { max-width: var(--max); margin: 0 auto; padding: 0 28px 88px; }
+    .post-item { display: grid; grid-template-columns: 90px 1fr; gap: 28px; padding: 26px 0; border-bottom: 1px solid #e0e0dc; text-decoration: none; color: inherit; align-items: start; transition: all 0.2s ease; }
+    .post-item:first-child { border-top: 1px solid #e0e0dc; margin-top: 0; }
+    .post-item:hover .post-title { color: var(--accent); }
+    .post-date { font-size: 12px; color: var(--gray-400); padding-top: 3px; line-height: 1.4; }
+    .post-tag { font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); margin-bottom: 6px; }
+    .post-title { font-size: 17px; font-weight: 500; color: var(--black); margin-bottom: 8px; line-height: 1.35; transition: color 0.2s ease; }
+    .post-excerpt { font-size: 14px; color: var(--gray-600); line-height: 1.65; }
+
+    footer { border-top: 1px solid var(--gray-200); padding: 36px 28px; }
+    .footer-inner { max-width: var(--max); margin: 0 auto; display: flex; align-items: center; justify-content: space-between; }
+    .footer-left { font-size: 13px; color: var(--gray-400); line-height: 1.6; }
+    .footer-right { display: flex; gap: 24px; }
+    .footer-right a { font-size: 13px; color: var(--gray-400); text-decoration: none; transition: color 0.2s ease; }
+    .footer-right a:hover { color: var(--black); }
+
+    @media (max-width: 680px) {
+      .nav-links { display: none; flex-direction: column; gap: 20px; position: absolute; top: 62px; left: 0; right: 0; background: var(--white); border-bottom: 1px solid var(--gray-200); padding: 24px 28px; }
+      .nav-links.open { display: flex; }
+      .hamburger { display: flex; }
+      .post-item { grid-template-columns: 1fr; gap: 4px; }
+      .footer-inner { flex-direction: column; gap: 16px; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">
+      <img src="/images/logo-wide.png" class="nav-logo-img" alt="Curtis Greve LLC"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <span class="nav-logo-text-fallback" style="display:none">
+        <span class="nav-logo-name">Curtis Greve</span>
+        <span class="nav-logo-tag">Reverse Logistics &amp; Liquidation Expert</span>
+      </span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="/#about">About</a></li>
+      <li><a href="/#services">Services</a></li>
+      <li><a href="/#who">Who I Help</a></li>
+      <li><a href="/blog/">Insights</a></li>
+      <li><a href="/#book">Book</a></li>
+      <li><a href="/#contact" class="nav-cta">Work With Me</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="blog-header">
+  <p class="section-label">Insights</p>
+  <h1 class="section-title">Thinking out loud on the secondary market</h1>
+  <p class="section-body">No-fluff takes on liquidation, reverse logistics, and the business of secondary market operations. Drawn from 40 years in the industry.</p>
+</div>
+
+<div class="post-list">
+  {% for post in collections.posts %}
+  <a href="{{ post.url }}" class="post-item">
+    <div class="post-date">{{ post.date | readableDate }}</div>
+    <div>
+      <p class="post-tag">{{ post.data.category }}</p>
+      <p class="post-title">{{ post.data.title }}</p>
+      <p class="post-excerpt">{{ post.data.excerpt }}</p>
+    </div>
+  </a>
+  {% endfor %}
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-left">
+      <img src="/images/logo-wide.png" alt="Curtis Greve LLC"
+           style="height:28px;width:auto;display:block;margin-bottom:8px;opacity:0.7"
+           onerror="this.style.display='none'">
+      &copy; 2026 Curtis Greve LLC. All rights reserved.<br />
+      <span style="font-size:12px;">Recover More. Move Faster. Protect Margin.</span>
+    </div>
+    <div class="footer-right">
+      <a href="/#about">About</a>
+      <a href="/#services">Services</a>
+      <a href="/blog/">Insights</a>
+      <a href="/#book">Book</a>
+      <a href="mailto:curtis@cgreve.com">Email</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('navLinks');
+  hamburger.addEventListener('click', () => navLinks.classList.toggle('open'));
+  navLinks.querySelectorAll('a').forEach(l => l.addEventListener('click', () => navLinks.classList.remove('open')));
+</script>
+</body>
+</html>
