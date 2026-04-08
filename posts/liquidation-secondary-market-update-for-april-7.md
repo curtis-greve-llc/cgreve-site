@@ -5,8 +5,7 @@ category: Liquidation Buying
 excerpt: "The Global Reverse Logistics Alliance (GRLA) is officially launched.
   $218M Foot Locker inventory liquidation charUPS Return Vision AI — Fraud
   detection pilot rolling out broadly in 2026. ge complete. "
-meta_description: Liquidation, secondary market news, GRLA, Dicks Sporting
-  Goods, LQDT, Liquidity Services, Blue Yonder, UPS, Liquidata
+meta_description: "Liquidation, Reverse Logistics, Returns Management, Closeouts, Circularity, "
 layout: post.njk
 ---
 **Liquidation News of Importance This Week:**
